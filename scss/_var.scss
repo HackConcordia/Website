@@ -1,0 +1,44 @@
+
+// Google Material Colors
+// https://www.google.com/design/spec/style/color.html#color-ui-color-palette
+
+$c-red         : #e51c23;
+$c-pink        : #e91e63;
+$c-purple      : #9c27b0;
+$c-deep-purple : #673ab7;
+$c-indigo      : #3f51b5;
+$c-blue        : #5677fc;
+$c-light-blue  : #03a9f4;
+$c-cyan        : #00bcd4;
+$c-teal        : #009688;
+$c-green       : #259b24;
+$c-light-green : #8bc34a;
+$c-lime        : #cddc39;
+$c-yellow      : #ffeb3b;
+$c-amber       : #ffc107;
+$c-orange      : #ff9800;
+$c-deep-orange : #ff5722;
+$c-brown       : #795548;
+$c-grey        : #9e9e9e;
+$c-gray        : $c-grey;
+$c-blue-grey   : #607d8b;
+$c-blue-gray   : $c-blue-grey;
+
+// Choose a highlight color;
+$c-highlight : $c-blue;
+
+// Text Colors
+$c-text      : #212121;
+$c-link-text : $c-highlight;
+
+$c-border       : rgba(0,0,0,.24);
+$c-border-light : rgba(0,0,0,.12);
+
+
+// Breakpoints
+$bp-small  : 440px;
+$bp-medium : 770px;
+$bp-large  : 990px;
+
+// Spacing
+$gap : 0.67em;

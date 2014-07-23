@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>NESS-Boilerplate</title>
+    <script src="https://cdn.socket.io/socket.io-1.0.6.js"></script>
+    <link rel="stylesheet" type="text/css" href="css/normalize.css">
+    <link rel="stylesheet" type="text/css" href="css/styles.css">
+</head>
+<body>
+    <div class="container">
+        <div class="row clearfix">
+            <div class="column full">
+                <h1>NESS-Boilerplate</h1>
+                <div id="example"></div>
+                <div class="ejs"> <%= ejsData %></div>
+            </div>
+        </div>
+    </div>
+
+    <script type="text/javascript">
+
+        // Sample socket.io events
+        var socket = io.connect('http://localhost');
+        socket.on('news', function (data) {
+
+            // Get a handle on the example element
+            var exampleContainer = document.getElementById('example');
+
+            // Display all key/value pairs in the example element
+            for (prop in data) {
+                var dataValue = document.createElement('h2');
+                dataValue.textContent += prop + " " + data[prop];
+                exampleContainer.appendChild(dataValue);
+            }
+
+            console.log(data);
+
+            // Emit another event back to the server
+            socket.emit('my other event', { clientSide: 'data' });
+        });
+
+    </script>
+</body>
+</html>
