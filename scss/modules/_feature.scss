@@ -1,0 +1,18 @@
+.feature {
+    height: 100%;
+    width: 100%;
+    position: relative;
+
+    background-image: url('images/grid.svg');
+
+    .content {
+        text-align: center;
+        position: relative;
+        top: 50%;
+        transform: translateY(-50%);
+    }
+
+    h1 {
+        font-size: 4em;
+    }
+}

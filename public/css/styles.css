@@ -43,11 +43,38 @@
   .column.flow-opposite {
     float: right; } }
 h1, h2, h3, h4, h5, h6 {
-  font-weight: normal; }
+  font-weight: normal;
+  font-family: 'Ubuntu Mono', sans-serif; }
 
 h1 {
   padding-bottom: 0.67em;
-  border-bottom: 1px solid rgba(0, 0, 0, 0.24); }
+  border-bottom: 1px solid rgba(0, 0, 0, 0.24);
+  margin-top: 0; }
 
 a {
   color: #5677fc; }
+
+p, a, div {
+  font-family: 'Lato', sans-serif;
+  font-weight: 400; }
+
+html, body {
+  height: 100%;
+  width: 100%; }
+
+.inverted {
+  color: yellow;
+  background-color: #111111; }
+
+.feature {
+  height: 100%;
+  width: 100%;
+  position: relative;
+  background-image: url("images/grid.svg"); }
+  .feature .content {
+    text-align: center;
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%); }
+  .feature h1 {
+    font-size: 4em; }

@@ -1,12 +1,29 @@
 h1, h2, h3, h4, h5, h6 {
     font-weight: normal;
+    font-family: 'Ubuntu Mono', sans-serif;
 }
 
 h1 {
     padding-bottom: $gap;
     border-bottom: 1px solid $c-border;
+    margin-top: 0;
 }
 
 a {
     color: $c-highlight;
+}
+
+p, a, div {
+    font-family: 'Lato', sans-serif;
+    font-weight: 400;
+}
+
+html, body {
+    height: 100%;
+    width: 100%;
+}
+
+.inverted {
+    color: $c-yellow;
+    background-color: $c-black;
 }

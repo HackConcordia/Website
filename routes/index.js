@@ -4,7 +4,7 @@ var routes = {};
 
 // GET home page
 routes.index = function (req, res) {
-    res.render('index.ejs', {ejsData:'EJS is working!'});
+    res.render('index.ejs', {});
 };
 
 // GET normalize.css
