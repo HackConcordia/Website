@@ -3,5 +3,4 @@ var app = require('../app'),
 
 // Sample socket.io events
 io.on('connection', function (socket) {
-
 });
