@@ -6,7 +6,12 @@ h1, h2, h3, h4, h5, h6 {
 h1 {
     padding-bottom: $gap;
     border-bottom: 1px solid $c-border;
-    margin-top: 0;
+    margin: 0;
+    padding: 0;
+}
+
+h2 {
+    padding-bottom: 2em;
 }
 
 a {
