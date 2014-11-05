@@ -23,6 +23,10 @@ p, a, div {
     font-weight: 400;
 }
 
+a {
+    text-decoration: none;
+}
+
 html, body {
     height: 100%;
     width: 100%;
@@ -35,6 +39,10 @@ button {
 .inverted {
     color: $c-yellow;
     background-color: $c-black;
+
+    a {
+        color: $c-yellow;
+    }
 }
 
 button.inverted {

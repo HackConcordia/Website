@@ -62,6 +62,9 @@ p, a, div {
   font-family: 'Lato', sans-serif;
   font-weight: 400; }
 
+a {
+  text-decoration: none; }
+
 html, body {
   height: 100%;
   width: 100%; }
@@ -72,6 +75,8 @@ button {
 .inverted {
   color: yellow;
   background-color: #111111; }
+  .inverted a {
+    color: yellow; }
 
 button.inverted {
   border: none;
@@ -101,8 +106,8 @@ button.inverted {
       .feature .content {
         top: auto;
         transform: none; } }
-  .feature .email {
-    margin-top: 2em; }
+  .feature button.action {
+    margin: 1em 0; }
   .feature .logo {
     margin-bottom: 3em; }
   .feature h1 {
