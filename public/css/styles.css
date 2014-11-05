@@ -74,9 +74,12 @@ button {
   background-color: #111111; }
 
 button.inverted {
-  border: 3px solid yellow;
+  border: none;
   border-radius: 5px;
-  padding: 10px; }
+  padding: 10px;
+  background-color: yellow;
+  color: #111111;
+  font-weight: 700; }
 
 .feature {
   height: 100%;
@@ -98,6 +101,8 @@ button.inverted {
       .feature .content {
         top: auto;
         transform: none; } }
+  .feature .email {
+    margin-top: 2em; }
   .feature .logo {
     margin-bottom: 3em; }
   .feature h1 {

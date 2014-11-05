@@ -38,7 +38,10 @@ button {
 }
 
 button.inverted {
-    border: 3px solid $c-yellow;
+    border: none;
     border-radius: 5px;
     padding: 10px;
+    background-color: $c-yellow;
+    color: $c-black;
+    font-weight: 700;
 }
