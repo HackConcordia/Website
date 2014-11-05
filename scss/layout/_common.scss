@@ -28,7 +28,17 @@ html, body {
     width: 100%;
 }
 
+button {
+    outline: none;
+}
+
 .inverted {
     color: $c-yellow;
     background-color: $c-black;
+}
+
+button.inverted {
+    border: 3px solid $c-yellow;
+    border-radius: 5px;
+    padding: 10px;
 }

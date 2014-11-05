@@ -66,19 +66,45 @@ html, body {
   height: 100%;
   width: 100%; }
 
+button {
+  outline: none; }
+
 .inverted {
   color: yellow;
   background-color: #111111; }
+
+button.inverted {
+  border: 3px solid yellow;
+  border-radius: 5px;
+  padding: 10px; }
 
 .feature {
   height: 100%;
   width: 100%;
   position: relative;
+  padding: 4em 0;
   background-image: url("images/grid.svg"); }
   .feature .content {
     text-align: center;
     position: relative;
     top: 50%;
     transform: translateY(-50%); }
+    @media screen and (max-width: 770px) {
+      .feature .content {
+        top: auto;
+        transform: none; } }
+  .feature .logo {
+    margin-bottom: 3em; }
   .feature h1 {
     font-size: 4em; }
+
+.menu {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  color: yellow;
+  z-index: 1; }
+  .menu ul {
+    padding: 0; }
+  .menu li {
+    display: inline-block; }
