@@ -1,37 +1,78 @@
-.feature {
-    height: 100%;
-    width: 100%;
+.title.card {
     position: relative;
-    padding: 4em 0;
-
-    background-image: url('images/grid.svg');
+    background-color: #111;
+    overflow: hidden;
+    padding: 0;
 
     .content {
-        text-align: center;
-        position: relative;
-        top: 50%;
-        /*transform*/
-        -webkit-transform:translateY(-50%);
-           -moz-transform:translateY(-50%);
-            -ms-transform:translateY(-50%);
-             -o-transform:translateY(-50%);
-                transform:translateY(-50%);
+        background-image: url('../images/hex_grid_tile_50_tight.png');
+        height: 100%;
+        width: 100%;
+        position: absolute;
 
-        @media screen and (max-width: $bp-medium) {
-            top: auto;
-            transform: none;
+        img {
+            display: block;
+            margin: auto;
+            margin-bottom: 1em;
+        }
+
+        nav {
+            position: absolute;
+            bottom: 5em;
+            width: 66%;
+            margin: auto;
+            right: 0;
+            left: 0;
+        }
+
+        nav li {
+            display: table-cell;
+            text-align: center;
+            list-style-type: none;
+
+            // One for each (bad)
+            width: 33%;
+
+
+            a {
+                padding: 0.5em;
+            }
+
+            a:hover {
+                background-color: #ff0;
+                color: #000;
+            }
+        }
+
+        nav ul {
+            padding: 0;
+            display: table;
+            width: 100%;
         }
     }
 
-    button.action {
-        margin: 1em 0;
+    .scanner {
+        position: absolute;
+        left: -500px;
+        width: 25%;
+        height: 100%;
+
+        background: -moz-linear-gradient(left,  rgba(255,255,0,0) 0%, rgba(255,255,0,0.5) 50%, rgba(255,255,0,0) 100%); /* FF3.6+ */
+        background: -webkit-gradient(linear, left top, right top, color-stop(0%,rgba(255,255,0,0)), color-stop(50%,rgba(255,255,0,0.5)), color-stop(100%,rgba(255,255,0,0))); /* Chrome,Safari4+ */
+        background: -webkit-linear-gradient(left,  rgba(255,255,0,0) 0%,rgba(255,255,0,0.5) 50%,rgba(255,255,0,0) 100%); /* Chrome10+,Safari5.1+ */
+        background: -o-linear-gradient(left,  rgba(255,255,0,0) 0%,rgba(255,255,0,0.5) 50%,rgba(255,255,0,0) 100%); /* Opera 11.10+ */
+        background: -ms-linear-gradient(left,  rgba(255,255,0,0) 0%,rgba(255,255,0,0.5) 50%,rgba(255,255,0,0) 100%); /* IE10+ */
+        background: linear-gradient(to right,  rgba(255,255,0,0) 0%,rgba(255,255,0,0.5) 50%,rgba(255,255,0,0) 100%); /* W3C */
+        filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00ffffff', endColorstr='#00ffffff',GradientType=1 ); /* IE6-9 */
     }
 
-    .logo {
-        margin-bottom: 3em;
-    }
+    .container {
+        position: relative;
+        top: 50%;
+        transform: translateY(-50%);
 
-    h1 {
-        font-size: 4em;
+        h1 {
+            text-align: center;
+        }
     }
 }

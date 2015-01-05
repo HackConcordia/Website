@@ -5,7 +5,7 @@
 
 .container {
   margin: 0 auto;
-  max-width: 48rem;
+  max-width: 64rem;
   width: 90%; }
 
 .clearfix:before,
@@ -42,13 +42,15 @@
 
   .column.flow-opposite {
     float: right; } }
+.row {
+  padding-top: 4em; }
+
 h1, h2, h3, h4, h5, h6 {
   font-weight: normal;
   font-family: 'Ubuntu Mono', sans-serif; }
 
 h1 {
   padding-bottom: 0.67em;
-  border-bottom: 1px solid rgba(0, 0, 0, 0.24);
   margin: 0;
   padding: 0; }
 
@@ -86,40 +88,102 @@ button.inverted {
   color: #111111;
   font-weight: 700; }
 
-.feature {
+.card {
   height: 100%;
-  width: 100%;
-  position: relative;
-  padding: 4em 0;
-  background-image: url("images/grid.svg"); }
-  .feature .content {
-    text-align: center;
-    position: relative;
-    top: 50%;
-    /*transform*/
-    -webkit-transform: translateY(-50%);
-    -moz-transform: translateY(-50%);
-    -ms-transform: translateY(-50%);
-    -o-transform: translateY(-50%);
-    transform: translateY(-50%); }
-    @media screen and (max-width: 770px) {
-      .feature .content {
-        top: auto;
-        transform: none; } }
-  .feature button.action {
-    margin: 1em 0; }
-  .feature .logo {
-    margin-bottom: 3em; }
-  .feature h1 {
-    font-size: 4em; }
+  width: 100%; }
 
 .menu {
-  position: fixed;
   top: 0;
+  left: 0;
+  right: 0;
   width: 100%;
-  color: yellow;
-  z-index: 1; }
+  margin: auto;
+  padding: 0.5em;
+  position: fixed;
+  height: 3em;
+  background-color: #fff;
+  border: 1px solid #ddd; }
   .menu ul {
-    padding: 0; }
+    margin: 0; }
   .menu li {
-    display: inline-block; }
+    display: inline;
+    list-style-type: none;
+    padding: 0 2em; }
+  .menu h1 {
+    cursor: pointer; }
+  .menu .logo {
+    margin-right: 1em; }
+  .menu .logo, .menu h1 {
+    float: left; }
+  .menu .container {
+    position: relative; }
+  .menu nav {
+    position: absolute;
+    right: 0;
+    bottom: 0; }
+  .menu a {
+    color: inherit;
+    text-decoration: underline; }
+    .menu a:visited {
+      color: inherit; }
+
+.title.card {
+  position: relative;
+  background-color: #111;
+  overflow: hidden;
+  padding: 0; }
+  .title.card .content {
+    background-image: url("../images/hex_grid_tile_50_tight.png");
+    height: 100%;
+    width: 100%;
+    position: absolute; }
+    .title.card .content img {
+      display: block;
+      margin: auto;
+      margin-bottom: 1em; }
+    .title.card .content nav {
+      position: absolute;
+      bottom: 5em;
+      width: 66%;
+      margin: auto;
+      right: 0;
+      left: 0; }
+    .title.card .content nav li {
+      display: table-cell;
+      text-align: center;
+      list-style-type: none;
+      width: 33%; }
+      .title.card .content nav li a {
+        padding: 0.5em; }
+      .title.card .content nav li a:hover {
+        background-color: #ff0;
+        color: #000; }
+    .title.card .content nav ul {
+      padding: 0;
+      display: table;
+      width: 100%; }
+  .title.card .scanner {
+    position: absolute;
+    left: -500px;
+    width: 25%;
+    height: 100%;
+    background: -moz-linear-gradient(left, rgba(255, 255, 0, 0) 0%, rgba(255, 255, 0, 0.5) 50%, rgba(255, 255, 0, 0) 100%);
+    /* FF3.6+ */
+    background: -webkit-gradient(linear, left top, right top, color-stop(0%, rgba(255, 255, 0, 0)), color-stop(50%, rgba(255, 255, 0, 0.5)), color-stop(100%, rgba(255, 255, 0, 0)));
+    /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(left, rgba(255, 255, 0, 0) 0%, rgba(255, 255, 0, 0.5) 50%, rgba(255, 255, 0, 0) 100%);
+    /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient(left, rgba(255, 255, 0, 0) 0%, rgba(255, 255, 0, 0.5) 50%, rgba(255, 255, 0, 0) 100%);
+    /* Opera 11.10+ */
+    background: -ms-linear-gradient(left, rgba(255, 255, 0, 0) 0%, rgba(255, 255, 0, 0.5) 50%, rgba(255, 255, 0, 0) 100%);
+    /* IE10+ */
+    background: linear-gradient(to right, rgba(255, 255, 0, 0) 0%, rgba(255, 255, 0, 0.5) 50%, rgba(255, 255, 0, 0) 100%);
+    /* W3C */
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#00ffffff', endColorstr='#00ffffff',GradientType=1 );
+    /* IE6-9 */ }
+  .title.card .container {
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%); }
+    .title.card .container h1 {
+      text-align: center; }

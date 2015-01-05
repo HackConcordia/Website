@@ -1,22 +1,131 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <% include head.ejs %>
+  <% include head.ejs %>
 </head>
 <body>
-    <div class="inverted feature">
-        <div class="content">
-            <h1>hackConcordia</h1>
-            <h2>The site will bee up soon!</h2>
-            <img class="logo" src="images/bee-logo.svg">
-            <div>
-                <a target="_blank" href="/ConHacks2015.pdf">
-                    <div>Sponsor Us!</div>
-                    <button class="action inverted">View Sponsorship Package</button>
-                </a>
-            </div>
-            <div class="email">sponsor@hackconcordia.com</div>
-        </div>
-
+  <% include templates/menu.ejs %>
+  <div class="inverted row title card">
+    <!-- Light that scans behind the hex -->
+    <div class="scanner"></div>
+    <div class="content">
+      <div class="container">
+        <img src="images/bee-logo.svg">
+        <h1>hackConcordia</h1>
+      </div>
+      <% include templates/nav.ejs %>
     </div>
+  </div>
+  <div id="about" class="row card">
+    <div class="container">
+      <h1>about</h1>
+    </div>
+  </div>
+  <div id="events" class="inverted row card">
+    <div class="container">
+      <h1>events</h1>
+    </div>
+  </div>
+  <div id="resources" class="row card">
+    <div class="container">
+      <h1>resources</h1>
+    </div>
+  </div>
+  <footer>
+
+  </footer>
+
+  <% include scripts.ejs %>
+  <script type="text/javascript">
+    var scanner = $('.scanner');
+
+    scan();
+
+    function scan () {
+      scanner.velocity({
+        left: '100%'
+      }, {
+        easing: 'linear',
+        duration: 15000,
+        complete: function () {
+          scanner.css('left', -scanner.outerWidth());
+          scan();
+        }
+      });
+    }
+
+
+  /*
+    $(document).ready(function () {
+
+      var body    = $('body');
+      var menu    = $('.menu');
+      var logoHex = menu.find('.hex');
+      var header  = menu.find('h1');
+
+      var scroll = {
+        getTop: function () {
+          return $(window).scrollTop();
+        },
+        isLocked: function () {
+          return body.css('overflow') == 'hidden';
+        },
+        lockScroll: function () {
+          body.css('overflow', 'hidden');
+        },
+        unlockScroll: function () {
+          body.css('overflow', 'auto');
+        }
+      }
+
+      scroll.lockScroll();
+
+      body.on('mousewheel', function (e) {
+
+        var wDelta = e.originalEvent.wheelDelta;
+
+        if (wDelta < 0 && scroll.isLocked()) {
+          collapseMenu();
+        }
+
+      });
+
+      function expandMenu () {
+        menu.velocity('stop');
+        menu.velocity({
+          height: '100%'
+        }, {
+          begin: scroll.lockScroll,
+          duration: 800,
+          easing: "ease",
+          queue: false
+        });
+
+        logoHex.velocity('reverse');
+
+      }
+
+      function collapseMenu () {
+        menu.velocity('stop');
+        menu.velocity({
+          height: '3em'
+        }, {
+          duration: 800,
+          easing: "ease",
+          queue: false,
+          complete: scroll.unlockScroll
+        });
+
+        logoHex.velocity({
+          rotateZ: "180deg"
+        }, {
+          duration: 1000,
+          ease: "linear"
+        });
+
+      }
+
+    });
+*/
+  </script>
 </html>

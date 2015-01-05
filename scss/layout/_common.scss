@@ -5,7 +5,6 @@ h1, h2, h3, h4, h5, h6 {
 
 h1 {
     padding-bottom: $gap;
-    border-bottom: 1px solid $c-border;
     margin: 0;
     padding: 0;
 }
@@ -52,4 +51,10 @@ button.inverted {
     background-color: $c-yellow;
     color: $c-black;
     font-weight: 700;
+}
+
+// What takes a full page
+.card {
+    height: 100%;
+    width: 100%;
 }

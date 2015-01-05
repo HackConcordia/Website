@@ -8,7 +8,7 @@
 
 .container {
   margin: 0 auto;
-  max-width: 48rem;
+  max-width: 64rem;
   width: 90%;
 }
 
@@ -40,4 +40,8 @@
   .column.fourth { width: 25%; }
   .column.flow-opposite { float: right; }
 
+}
+
+.row {
+  padding-top: $menuHeight + 1em;
 }
