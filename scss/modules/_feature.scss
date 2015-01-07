@@ -1,4 +1,5 @@
 .title.card {
+    min-height: 100%;
     position: relative;
     background-color: #111;
     overflow: hidden;
@@ -42,6 +43,7 @@
                 background-color: #ff0;
                 color: #000;
             }
+
         }
 
         nav ul {
@@ -53,7 +55,7 @@
 
     .scanner {
         position: absolute;
-        left: -500px;
+        left: -25%;
         width: 25%;
         height: 100%;
 
@@ -74,5 +76,21 @@
         h1 {
             text-align: center;
         }
+    }
+}
+
+#about {
+    img {
+        margin: auto;
+        display: block;
+        cursor: pointer;
+    }
+
+    .hacking {
+        height: 250px;
+    }
+
+    .play {
+        height: 200px;
     }
 }

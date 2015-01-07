@@ -10,16 +10,25 @@ h1 {
 }
 
 h2 {
-    padding-bottom: 2em;
+    text-align: center;
 }
 
 a {
     color: $c-highlight;
 }
 
+video {
+    margin: auto;
+    display: block;
+}
+
 p, a, div {
     font-family: 'Lato', sans-serif;
     font-weight: 400;
+}
+
+p {
+    font-size: 1.2em;
 }
 
 a {
@@ -55,6 +64,7 @@ button.inverted {
 
 // What takes a full page
 .card {
-    height: 100%;
+    min-height: 50%;
     width: 100%;
+    padding: 4em 0;
 }
