@@ -1,0 +1,28 @@
+.resources {
+    margin: 1em 0;
+
+    .resource {
+        padding: 1em;
+        margin: 1em 0;
+        border-left: 5px solid #ccc;
+
+-webkit-box-shadow: 2px 2px 5px 0px rgba(50, 50, 50, 0.17);
+-moz-box-shadow:    2px 2px 5px 0px rgba(50, 50, 50, 0.17);
+box-shadow:         2px 2px 5px 0px rgba(50, 50, 50, 0.17);
+
+
+        a {
+            font-size: 1.3em;
+            color: inherit;
+            font-weight: 700;
+            display: block;
+            padding-bottom: 0.2em;
+
+            &:hover {
+                text-decoration: underline;
+            }
+        }
+
+    }
+
+}

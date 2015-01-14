@@ -88,9 +88,30 @@
 
     .hacking {
         height: 250px;
+        max-width: 100%;
     }
 
     .play {
         height: 200px;
+    }
+}
+
+#events {
+    background-image: url('../images/hex_grid_tile_50_tight.png');
+
+    li {
+        list-style-type: none;
+        padding: 1em;
+        border-top: 1px solid $c-yellow;
+        border-bottom: 1px solid $c-yellow;
+    }
+
+    ul {
+        text-align: center;
+    }
+
+    iframe {
+        margin: 1em 0;
+        //width:100%;
     }
 }

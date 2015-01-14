@@ -1,0 +1,24 @@
+{
+  "resources": [
+    {
+      "title"       : "Learn To Code",
+      "description" : "Link-rich resource to learn a new language. Good for beginners and those looking to expand their repertoire.",
+      "url"         : "http://www.techgrey.com/2015/01/the-best-websites-to-learn-coding-online.html"
+    },
+    {
+      "title"       : "GitHub Education Student Developer Pack",
+      "description" : "Lots of free tools and discounts for students! Everything from DigitalOcean hosting credit (100$) to a free subscription to Unreal Engine 4.",
+      "url"         : "https://education.github.com/pack"
+    },
+    {
+      "title"       : "Learn Git Branching (Game)",
+      "description" : "Great for those who are new to Git and for those that want to brush up.",
+      "url"         : "https://pcottle.github.io/learnGitBranching/"
+    },
+    {
+      "title"       : "OverAPI",
+      "description" : "A cheat sheet for different language and framework APIs, extremely useful as reference material during hackathons.",
+      "url"         : "http://overapi.com/"
+    }
+  ]
+}

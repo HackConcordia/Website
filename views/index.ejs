@@ -18,13 +18,15 @@
   </div>
   <div id="about" class="row card">
     <div class="container">
-      <h1>about</h1>
-      <p>
-        HackConcordia is a student group at <a href="http://concordia.ca">Concordia University</a> that focuses on fostering a community of developers that are using technology to learn about and create amazing things.
-      </p>
-      <p>
-        This website is the place to go to get information on upcoming Hackathons and other events that Concordia students will be attending. It's also a great place to go for learning resources to help you get started and improve your hacks!</p>
-      <div class="what-we-do">
+      <div class="column half">
+        <h1>about</h1>
+        <p>
+          HackConcordia is a student group at <a href="http://concordia.ca">Concordia University</a> that focuses on fostering a community of developers that are using technology to learn about and create amazing things.
+        </p>
+        <p>
+          This website is the place to go to get information on upcoming Hackathons and other events that Concordia students will be attending. It's also a great place to go for learning resources to help you get started and improve your hacks!</p>
+      </div>
+      <div class="column half what-we-do">
         <h2>What We Do</h2>
         <img class="play" src="images/play.svg">
       </div>
@@ -33,15 +35,31 @@
   <div id="events" class="inverted row card">
     <div class="container">
       <h1>events</h1>
+      <iframe class="calendar" src="https://www.google.com/calendar/embed?src=03ks2517j00h1453vt3n42o9e4%40group.calendar.google.com&ctz=America/Montreal" style="border: 0" width="100%" height="600" frameborder="0" scrolling="no"></iframe>
+      <div> Something missing? Let us know on twitter <a href="https://twitter.com/HackConcordia">@HackConcordia</a> or on the Facebook Group!</div>
     </div>
   </div>
   <div id="resources" class="row card">
     <div class="container">
       <h1>resources</h1>
+      <div class="resources">
+
+        <% for(var i = 0; i < resources.length; i++) { %>
+          <div class="resource">
+            <a href="<%= resources[i].url %>">
+              <%= resources[i].title %>
+            </a>
+            <div class="description">
+              <%= resources[i].description %>
+            </div>
+          </div>
+        <% } %>
+
+      </div>
     </div>
   </div>
-  <footer>
-
+  <footer class="inverted">
+    <a href="http://github.com/HackConcordia">Fork us on Github &hearts;</a>
   </footer>
 
   <% include scripts.ejs %>
@@ -122,11 +140,4 @@
       }
     });
   </script>
-
-  <script type="text/javascript">
-    $(document).ready(function () {
-      var menu = $('.menu');
-    });
-  </script>
-
 </html>

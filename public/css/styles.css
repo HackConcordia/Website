@@ -245,6 +245,44 @@ button.inverted {
   display: block;
   cursor: pointer; }
 #about .hacking {
-  height: 250px; }
+  height: 250px;
+  max-width: 100%; }
 #about .play {
   height: 200px; }
+
+#events {
+  background-image: url("../images/hex_grid_tile_50_tight.png"); }
+  #events li {
+    list-style-type: none;
+    padding: 1em;
+    border-top: 1px solid yellow;
+    border-bottom: 1px solid yellow; }
+  #events ul {
+    text-align: center; }
+  #events iframe {
+    margin: 1em 0; }
+
+.resources {
+  margin: 1em 0; }
+  .resources .resource {
+    padding: 1em;
+    margin: 1em 0;
+    border-left: 5px solid #ccc;
+    -webkit-box-shadow: 2px 2px 5px 0px rgba(50, 50, 50, 0.17);
+    -moz-box-shadow: 2px 2px 5px 0px rgba(50, 50, 50, 0.17);
+    box-shadow: 2px 2px 5px 0px rgba(50, 50, 50, 0.17); }
+    .resources .resource a {
+      font-size: 1.3em;
+      color: inherit;
+      font-weight: 700;
+      display: block;
+      padding-bottom: 0.2em; }
+      .resources .resource a:hover {
+        text-decoration: underline; }
+
+footer {
+  padding: 2em;
+  text-align: center;
+  background-image: url("../images/hex_grid_tile_50_tight.png"); }
+  footer:hover {
+    text-decoration: underline; }

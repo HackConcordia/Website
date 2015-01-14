@@ -1,0 +1,10 @@
+footer {
+    padding: 2em;
+    text-align: center;
+    background-image: url('../images/hex_grid_tile_50_tight.png');
+
+    &:hover {
+        text-decoration: underline;
+    }
+
+}
