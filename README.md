@@ -1,46 +1,20 @@
 
-# SENSE Boilerplate
+# HackConcordia Website
 
-Make a Node application whenever the mood strikes, without any tedious setup!
+Hi! This is the repository for the HackConcordia website.
 
-## What is SENSE?
+## Contributing
 
-It's an acronym!
+If you want to contribute to this repository follow these simple steps:
 
-- Socket.io
-- Express
-- Node
-- Sass
-- EJS
+1. Fork this repository
+2. Make your changes
+3. Submit a Pull Request
+4. ???
+5. Profit.
 
-## Installation
+Try to make small changes for each pull request. It makes it easier for code review and it means your request is more likely to be accepted.
 
-This assumes you already have [Node.js](http://nodejs.org/) and [NPM](https://www.npmjs.org/) installed.
+## Sugestions
 
-### Windows
-
-`git clone https://github.com/argo49/SENSE-Boilerplate`
-
-`cd SENSE-Boilerplate`
-
-`init.bat`
-
-`npm start`
-
-### Mac/Linux
-
-`git clone https://github.com/argo49/SENSE-Boilerplate`
-
-`cd SENSE-Boilerplate`
-
-`bash init.sh`
-
-`npm start`
-
-## Notes
-
-- If you have any problems, please create an issue!
-- The sass folder structure is one I find myself using fairly often, feel free to tear it up and make your own structure!
-- This boilerplate also contains references to [normalize.css](https://necolas.github.io/normalize.css/) and Adam Kaplan's [grid](http://www.adamkaplan.me/grid/).
-- Special thanks to
-  - robrighter's [node-boilerplate](https://github.com/robrighter/node-boilerplate/blob/master/initproject.sh) for giving me the scripting setup idea
+If you have suggestions to improve the site or notice a bug, please create an issue using the GitHub issue tracker.
