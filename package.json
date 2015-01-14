@@ -1,14 +1,14 @@
 {
-  "name": "SENSE-Boilerplate",
-  "version": "0.0.0",
-  "description": "A node, express, socket.io, sass and EJS project skeleton",
+  "name": "hack_concordia_website",
+  "version": "0.0.1",
+  "description": "A website with resources for the good people at Concordia University",
   "main": "app.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "node app.js"
   },
   "keywords": [
-    "boilerplate"
+    "hack"
   ],
   "author": "Tyler Argo <argo_49@hotmail.com>",
   "license": "MIT",
@@ -16,7 +16,6 @@
     "ejs": "^1.0.0",
     "express": "^4.6.1",
     "normalize.css": "^3.0.1",
-    "sass": "^0.5.0",
-    "socket.io": "^1.0.6"
+    "sass": "^0.5.0"
   }
 }

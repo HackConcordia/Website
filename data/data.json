@@ -19,6 +19,11 @@
       "title"       : "OverAPI",
       "description" : "A cheat sheet for different language and framework APIs, extremely useful as reference material during hackathons.",
       "url"         : "http://overapi.com/"
+    },
+    {
+      "title"       : "The Little MongoDB Book",
+      "description" : "Great read to get familiar with MongoDB",
+      "url"         : "http://openmymind.net/mongodb.pdf"
     }
   ]
 }
