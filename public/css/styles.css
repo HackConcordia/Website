@@ -98,7 +98,6 @@ button.inverted {
   font-weight: 700; }
 
 .card {
-  min-height: 50%;
   width: 100%;
   padding: 4em 0; }
 
@@ -233,7 +232,7 @@ button.inverted {
     /* IE10+ */
     background: linear-gradient(to right, rgba(255, 255, 0, 0) 0%, rgba(255, 255, 0, 0.5) 50%, rgba(255, 255, 0, 0) 100%);
     /* W3C */
-    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#00ffffff', endColorstr='#00ffffff',GradientType=1 );
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00ffffff', endColorstr='#00ffffff',GradientType=1 );
     /* IE6-9 */ }
   .title.card .container {
     position: relative;
