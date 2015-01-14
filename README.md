@@ -1,7 +1,7 @@
 
 # HackConcordia Website
 
-Hi! This is the repository for the HackConcordia website.
+Hi! This is the repository for the [HackConcordia](https://hackconcordia.com/) website.
 
 ## Contributing
 
