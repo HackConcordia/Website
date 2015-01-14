@@ -24,7 +24,7 @@
           HackConcordia is a student group at <a href="http://concordia.ca">Concordia University</a> that focuses on fostering a community of developers that are using technology to learn about and create amazing things.
         </p>
         <p>
-          This website is the place to go to get information on upcoming Hackathons and other events that Concordia students will be attending. It's also a great place to go for learning resources to help you get started and improve your hacks!</p>
+          This website is the place to go to get information on upcoming Hackathons and other events that Concordia students will be attending. It's also a great place to go for learning resources to help you get started and improve your projects!</p>
       </div>
       <div class="column half what-we-do">
         <h2>What We Do</h2>
@@ -36,7 +36,7 @@
     <div class="container">
       <h1>events</h1>
       <iframe class="calendar" src="https://www.google.com/calendar/embed?src=03ks2517j00h1453vt3n42o9e4%40group.calendar.google.com&ctz=America/Montreal" style="border: 0" width="100%" height="600" frameborder="0" scrolling="no"></iframe>
-      <div> Something missing? Let us know on twitter <a href="https://twitter.com/HackConcordia">@HackConcordia</a> or on the Facebook Group!</div>
+      <p> Something missing? Let us know on twitter <a href="https://twitter.com/HackConcordia">@HackConcordia</a>, Facebook or <a href="https://github.com/HackConcordia/Website/issues/new?title=Website%20improvement:">GitHub</a>!</p>
     </div>
   </div>
   <div id="resources" class="row card">
@@ -56,88 +56,12 @@
         <% } %>
 
       </div>
+      <p><a href="https://github.com/HackConcordia/Website/issues/new?title=Resource%20suggestion:">Suggest a resource</a></p>
     </div>
   </div>
-  <footer class="inverted">
-    <a href="http://github.com/HackConcordia">Fork us on Github &hearts;</a>
-  </footer>
+
+  <% include templates/footer.ejs %>
 
   <% include scripts.ejs %>
 
-  <!-- Brings the yellow scan through the hex grid -->
-  <script type="text/javascript">
-    $(document).ready(function () {
-      var scanner = $('.scanner');
-
-      scan();
-
-      function scan () {
-        scanner.velocity({
-          left: '100%'
-        }, {
-          easing: 'linear',
-          duration: 15000,
-          complete: function () {
-            scanner.css('left', -scanner.outerWidth());
-            scan();
-          }
-        });
-      }
-    });
-  </script>
-
-  <!-- Show the 'what we do' -->
-  <script type="text/javascript">
-    $(document).ready(function () {
-      var whatWeDoPlay = $('.what-we-do img');
-
-      whatWeDoPlay.one('click', function () {
-        var gif = $('<img class="hacking" src="images/hacking_in_progress.gif"/>')
-        whatWeDoPlay.closest('.what-we-do').append(gif);
-        whatWeDoPlay.remove();
-      });
-
-    });
-  </script>
-
-  <!-- Controls the menu -->
-  <script type="text/javascript">
-
-    $(document).ready(function () {
-      var menu  = $('.menu');
-      var hammy = $('.hamburger');
-      var links = menu.find('li a');
-      var nav   = menu.find('nav');
-
-      hammy.on('click', function () {
-        toggleMenu();
-      });
-
-      links.on('click', function () {
-        if (hammy.is(':visible')) {
-          toggleMenu();
-        }
-      });
-
-      function toggleMenu () {
-        var isFull = menu.hasClass('full');
-
-        menu.velocity({
-          'height': (isFull)? '3em' : '100%'
-        },{
-          duration: 400,
-          begin: function () {
-            if (isFull) {
-              menu.removeClass('full');
-            }
-          },
-          complete: function () {
-            if (!isFull) {
-              menu.addClass('full');
-            }
-          }
-        });
-      }
-    });
-  </script>
 </html>

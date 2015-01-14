@@ -29,6 +29,10 @@ p, a, div {
 
 p {
     font-size: 1.2em;
+
+    a {
+        text-decoration: underline;
+    }
 }
 
 a {
@@ -64,7 +68,7 @@ button.inverted {
 
 // What takes a full page
 .card {
-    min-height: 50%;
-    width: 100%;
-    padding: 4em 0;
+    min-height : 50%;
+    width      : 100%;
+    padding    : 4em 0;
 }
