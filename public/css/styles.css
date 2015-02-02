@@ -207,7 +207,10 @@ button.inverted {
       list-style-type: none;
       width: 33%; }
       .title.card .content nav li a {
-        padding: 0.5em; }
+        padding: 1em 1.5em;
+        border: 1px solid #ff0;
+        border-radius: 0.5em;
+        margin: 0 0.5em; }
       .title.card .content nav li a:hover {
         background-color: #ff0;
         color: #000; }
@@ -262,6 +265,15 @@ button.inverted {
     text-align: center; }
   #events iframe {
     margin: 1em 0; }
+
+.social-buttons ul li {
+  list-style-type: none;
+  display: inline-block; }
+.social-buttons svg {
+  height: 5em;
+  width: 5em; }
+.social-buttons svg:hover {
+  opacity: 0.5; }
 
 .resources {
   margin: 1em 0; }

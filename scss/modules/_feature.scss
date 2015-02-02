@@ -36,7 +36,10 @@
 
 
             a {
-                padding: 0.5em;
+                padding: 1em 1.5em;
+                border: 1px solid #ff0;
+                border-radius: 0.5em;
+                margin: 0 0.5em;
             }
 
             a:hover {
@@ -113,5 +116,24 @@
     iframe {
         margin: 1em 0;
         //width:100%;
+    }
+}
+
+.social-buttons {
+
+
+
+    ul li {
+        list-style-type: none;
+        display: inline-block;
+    }
+
+    svg {
+        height: 5em;
+        width: 5em;
+    }
+
+    svg:hover {
+        opacity: 0.5;
     }
 }
