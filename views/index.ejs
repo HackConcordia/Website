@@ -16,10 +16,10 @@
       <% include templates/nav.ejs %>
     </div>
   </div>
-  <div id="about" class="row card">
-    <div class="container">
+  <div id="about" class="container">
+    <div class="row clearfix">
       <div class="column half">
-        <h1>about</h1>
+        <h1>About</h1>
         <p>
           HackConcordia is a student group at <a href="http://concordia.ca">Concordia University</a> that focuses on fostering a community of developers that are using technology to learn about and create amazing things.
         </p>
@@ -31,17 +31,25 @@
         <img class="play" src="images/play.svg">
       </div>
     </div>
+    <div class="row clearfix affiliations">
+      <div class="column half">
+        <img src="images/logo-encs.jpg">
+      </div>
+      <div class="column half">
+        <img src="images/logo-eca.png">
+      </div>
+    </div>
   </div>
   <div id="events" class="inverted row card">
     <div class="container">
-      <h1>events</h1>
+      <h1>Events</h1>
       <iframe class="calendar" src="https://www.google.com/calendar/embed?src=03ks2517j00h1453vt3n42o9e4%40group.calendar.google.com&ctz=America/Montreal" style="border: 0" width="100%" height="600" frameborder="0" scrolling="no"></iframe>
       <p> Something missing? Let us know on twitter <a href="https://twitter.com/HackConcordia">@HackConcordia</a>, Facebook or <a href="https://github.com/HackConcordia/Website/issues/new?title=Website%20improvement:">GitHub</a>!</p>
     </div>
   </div>
   <div id="resources" class="row card">
     <div class="container">
-      <h1>resources</h1>
+      <h1>Resources</h1>
       <div class="resources">
 
         <% for(var i = 0; i < resources.length; i++) { %>

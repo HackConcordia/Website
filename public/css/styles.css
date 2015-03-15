@@ -83,6 +83,9 @@ html, body {
 button {
   outline: none; }
 
+img {
+  max-width: 100%; }
+
 .inverted {
   color: yellow;
   background-color: #111111; }
@@ -274,6 +277,9 @@ button.inverted {
   width: 5em; }
 .social-buttons svg:hover {
   opacity: 0.5; }
+
+.affiliations {
+  padding-bottom: 4em; }
 
 .resources {
   margin: 1em 0; }

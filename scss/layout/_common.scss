@@ -48,6 +48,10 @@ button {
     outline: none;
 }
 
+img {
+    max-width: 100%;
+}
+
 .inverted {
     color: $c-yellow;
     background-color: $c-black;
