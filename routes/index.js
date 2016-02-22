@@ -7,6 +7,11 @@ routes.index = function (req, res) {
     res.render('index.ejs', require("../data/data.json"));
 };
 
+// GET positions page
+routes.positions = function (req, res) {
+    res.render('positions.ejs', require("../data/data.json"));
+};
+
 // GET normalize.css
 routes.normalizecss = function (req, res) {
     res.sendFile(app.get('node_modules') + '/normalize.css/normalize.css');

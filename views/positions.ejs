@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <% include head.ejs %>
+</head>
+<body class="positions">
+
+  <div class="container">
+  <h1>HackConcordia Positions</h1>
+
+  <div class="positions-preamble">
+    <p>
+      We are HackConcordia, the student society which prepared Concordia’s first Major League Hacking event, <a href="http://conuhacks.io">ConUHacks 2016</a>.
+    </p>
+    <p>
+      This coming year, we’re looking to do even more as to ensure Concordia and its students are recognized in the hacking community &amp; industry as well as push further in building a community among our Software &amp; Computer Science department.
+    </p>
+    <p>
+      HackConcordia is looking for the next worker bees, and we want YOU to show us what Concordia looks like! Come help us build Montreal’s go-to hackathon and Canada’s most thriving undergraduate tech community! We’re looking for hard-working people who love to take on challenges and put their many talents to use.
+    </p>
+  </div>
+
+  <% for(var i = 0; i < positions.length; i++) { %>
+    <div class="position">
+      <h2><%= positions[i].position %></h2>
+      <p><%= positions[i].description %></p>
+      <%if (positions[i].directors.length > 0) { %>
+        <div class="directors">
+          <% for(var j = 0; j < positions[i].directors.length; j++) { %>
+            <h3><%= positions[i].directors[j].position %></h3>
+            <p><%= positions[i].directors[j].description %></p>
+          <% } %>
+        </div>
+      <% } %>
+    </div>
+  <% } %>
+
+  </div>
+
+  <footer class="inverted">
+      <a href="/"><< Back</a>
+  </footer>
+  <% include scripts.ejs %>
+</html>

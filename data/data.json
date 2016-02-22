@@ -25,5 +25,66 @@
       "description" : "Great read to get familiar with MongoDB",
       "url"         : "http://openmymind.net/mongodb.pdf"
     }
+  ],
+  "positions": [
+    {
+      "position":"VP Social",
+      "description":"You will be responsible for engaging our students, coordinating our volunteers, and making our community thrive. We are looking for someone who likes to interact and reach out to the community as to get them pumped for everything we’re organizing. Good communication, sense of humour, and sociability will be key for this position!",
+      "directors":[]
+    },
+    {
+      "position":"VP Education",
+      "description":"You will take care of hosting our workshops, tech talks, and tutorials. Looking to hone your technical skills AND get to interact with company reps? This is for you! Event organization experience & autonomy will give you a head start!",
+      "directors":[]
+    },
+    {
+      "position":"VP Technology",
+      "description":"You are responsible for everything related to technology - event website, society website, web hosting, DNS record management, admin management, service integration (gmail, slack, trello, etc), task automation, etc. Our ideal candidate is experienced with web technologies from inception to deployment (Javascript, Node.js, MongoDB, etc.) and is quick to respond in crisis situations.",
+      "directors":[
+        {
+          "position": "Director of Technology",
+          "description": "You will work closely with our VP Technology in order to come up with solutions and inherit the know-how for next year. We are looking for quick learners - agile to adapt to circumstances and jump in the midst of action to produce last minute features. Experience with web technologies (Javascript, Node.js, MongoDB, managing DNS record, and admin management) is a plus."
+        }
+      ]
+    },
+    {
+      "position":"VP Sponsorship",
+      "description":"You will be responsible for the whole sponsorship and finance processes. Your duty will be to reach out to new potential sponsors, ensure our current ties stay healthy and beneficial for both parties, and walk the sponsors through the process of sponsoring such a large event. Good communication, salesmanship, quick response rate, professionalism, good ability to connect with people, honesty, and modesty will be key for this position!",
+      "directors":[
+        {
+          "position": "Director of Sponsorship",
+          "description": "You will assist the VP Sponsorship in his tasks and ensure that all sponsors are satisfied to the utmost extent possible. Good communication, salesmanship, quick response rate, professionalism, good ability to connect with people, honesty, and modesty will be key for this position as well!"
+        },
+        {
+          "position": "Director of Finances",
+          "description": "You will assist the VP Sponsorship in helping out with our accountancy. You will be responsible for processing invoices, receipts, and requests for reimbursements. You will most likely also contribute to the sponsorship process. Good organization, perfectionism, honesty, communication, and more will be key for this position!"
+        }
+      ]
+    },
+    {
+      "position":"VP Public Relations",
+      "description":"You will be responsible for managing our social media outlets, and communicating with traditional medias (press, television, radio). You will be our point of contact with the world, our herald. We are looking for candidates with experience with social media management, good communication & social skills, fast response rate, and professionalism. ",
+      "directors":[]
+    },
+    {
+      "position":"VP Design",
+      "description":"You will make beautiful things. Your artistic expression will mold the shape of HackConcordia’s appearance. Shiny and pretty will be your second nature. You will lead the design of all items from promotional swag to documentation, from posters to banners, and beyond. Prior experience in the design industry or academic curriculum in design is highly favoured. PORTFOLIO REQUIRED.",
+      "directors":[]
+    },
+    {
+      "position":"VP Logistics",
+      "description":"You will make sure everything is planned for the events. Namely, the VP Logistics is responsible for fleshing out all the details pertaining to the events, as well as all tasks that need to be undertaken to make the event a success. You will participate in elaborating every aspect of the event, including venue, food, hospitality, swag, technology etc. Our ideal candidate will be organized, rational, critical, diplomatic, and will have the ability to view projects as a whole, but also in great detail.",
+      "directors":[
+        {
+          "position": "Director of Operations",
+          "description": "You will assist in managing the logistics and day to day operations of the team, ensuring as few obstacles as possible hinder the progress of the team. Moreover, the Director of Operations will be responsible for going around Montreal to get packets, buy supplies, and ship packets to our sponsors. Our ideal candidate will be organized, agile, and responsive. A valid driver license is encouraged."
+        }
+      ]
+    },
+    {
+      "position":"VP External Affaires",
+      "description":"Our VP External is responsible for reaching out to people and see how they fit to collaborate with the organization as well as determine as to what capacity the relationship makes sense. Most importantly, you will follow-up with the society’s current ties and make sure all external relationships are healthy and maintained. Be ready to wear different hats as you talk to potential mentors, collaborators, vendors, sponsors, partners, Concordia staff, media, and many more personalities. It’s important for this person to recognize the different interests of the stakeholders on both sides of the collaboration, seeing that healthy relationships usually go two ways.",
+      "directors":[]
+    }
   ]
 }

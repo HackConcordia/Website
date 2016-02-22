@@ -1,0 +1,40 @@
+.positions {
+  background-image: url('../images/hex_grid_tile_50_tight.png');
+  background-color: $c-black;
+  color: #fff;
+
+  h1 {
+    padding-bottom: 1em;
+    padding-top: 2em;
+    color: $c-yellow;
+    text-align: center;
+  }
+}
+
+.positions-preamble,
+.position {
+  margin-bottom: 3em;
+}
+
+.position h2 {
+  background-color: $c-yellow;
+  display: inline;
+  color: $c-black;
+  padding: 0.25em;
+}
+
+.positions a {
+  color: $c-yellow;
+
+  &:visited {
+    color: $c-yellow;
+  }
+}
+
+.directors {
+  padding-left: 1em;
+
+  h3 {
+    color: $c-yellow;
+  }
+}

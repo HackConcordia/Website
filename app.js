@@ -5,7 +5,7 @@ var express = require('express'),
     server  = module.exports.server = require('http').Server(app);
 
 // App Configuration
-app.set('port', process.env.PORT || 3000);
+app.set('port', process.env.PORT || 3002);
 app.set('views', path.join(__dirname, 'views'));
 app.set('node_modules', path.join(__dirname, 'node_modules'));
 app.set('view engine', 'ejs');
@@ -13,6 +13,7 @@ app.use(express.static(path.join(__dirname, 'public')));
 
 // Routes
 app.get('/', routes.index);
+app.get('/positions', routes.positions);
 app.get('/css/normalize.css', routes.normalizecss);
 app.get('*', routes.fileNotFound); // 404 page should always be last
 

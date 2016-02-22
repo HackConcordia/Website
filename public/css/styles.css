@@ -47,7 +47,7 @@
 
 h1, h2, h3, h4, h5, h6 {
   font-weight: normal;
-  font-family: 'Ubuntu Mono', sans-serif; }
+  font-family: 'Raleway', sans-serif; }
 
 h1 {
   padding-bottom: 0.67em;
@@ -65,8 +65,8 @@ video {
   display: block; }
 
 p, a, div {
-  font-family: 'Lato', sans-serif;
-  font-weight: 400; }
+  font-family: 'Roboto', sans-serif;
+  font-weight: 300; }
 
 p {
   font-size: 1.2em; }
@@ -199,21 +199,32 @@ button.inverted {
       margin-bottom: 1em; }
     .title.card .content nav {
       position: absolute;
-      bottom: 5em;
-      width: 66%;
+      bottom: 10em;
+      width: 50%;
       margin: auto;
       right: 0;
       left: 0; }
+      @media screen and (max-width: 770px) {
+        .title.card .content nav {
+          bottom: 2em;
+          display: none; } }
     .title.card .content nav li {
       display: table-cell;
       text-align: center;
       list-style-type: none;
-      width: 33%; }
+      font-family: 'Raleway' sans-serif;
+      width: 25%; }
+      @media screen and (max-width: 770px) {
+        .title.card .content nav li {
+          display: block;
+          width: auto;
+          margin-top: 1em; } }
       .title.card .content nav li a {
-        padding: 1em 1.5em;
-        border: 1px solid #ff0;
-        border-radius: 0.5em;
-        margin: 0 0.5em; }
+        padding: 0.6em 1em;
+        border: 1px solid #ff0; }
+        @media screen and (max-width: 770px) {
+          .title.card .content nav li a {
+            padding: 0; } }
       .title.card .content nav li a:hover {
         background-color: #ff0;
         color: #000; }
@@ -221,6 +232,16 @@ button.inverted {
       padding: 0;
       display: table;
       width: 100%; }
+  .title.card .arrow {
+    position: absolute;
+    bottom: 1em;
+    left: 0;
+    right: 0;
+    text-align: center;
+    font-size: 2em; }
+    @media screen and (min-width: 770px) {
+      .title.card .arrow {
+        font-size: 1.2em; } }
   .title.card .scanner {
     position: absolute;
     left: -25%;
@@ -238,7 +259,7 @@ button.inverted {
     /* IE10+ */
     background: linear-gradient(to right, rgba(255, 255, 0, 0) 0%, rgba(255, 255, 0, 0.5) 50%, rgba(255, 255, 0, 0) 100%);
     /* W3C */
-    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00ffffff', endColorstr='#00ffffff',GradientType=1 );
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#00ffffff', endColorstr='#00ffffff',GradientType=1 );
     /* IE6-9 */ }
   .title.card .container {
     position: relative;
@@ -306,3 +327,33 @@ footer {
   background-image: url("../images/hex_grid_tile_50_tight.png"); }
   footer:hover {
     text-decoration: underline; }
+
+.positions {
+  background-image: url("../images/hex_grid_tile_50_tight.png");
+  background-color: #111111;
+  color: #fff; }
+  .positions h1 {
+    padding-bottom: 1em;
+    padding-top: 2em;
+    color: yellow;
+    text-align: center; }
+
+.positions-preamble,
+.position {
+  margin-bottom: 3em; }
+
+.position h2 {
+  background-color: yellow;
+  display: inline;
+  color: #111111;
+  padding: 0.25em; }
+
+.positions a {
+  color: yellow; }
+  .positions a:visited {
+    color: yellow; }
+
+.directors {
+  padding-left: 1em; }
+  .directors h3 {
+    color: yellow; }
